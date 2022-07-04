@@ -9,15 +9,29 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var cardDescription: UITableView!
+    @IBOutlet weak var cardName: UITableView!
+    @IBOutlet weak var cardImage: UITableView!
     @IBOutlet var tableView : UITableView!
+    
+    let networkCardManager = NetworkCardManager()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
+        searchBar.placeholder = "The Magician"
+//        if searchBar.text != nil {
+//            print(searchBar.text!)
+//        }
+        networkCardManager.fetchAllCards()
+//        networkCardManager.fetchRandomCards(numOfCards: 1)
     }
 
+    
 }
 
 
