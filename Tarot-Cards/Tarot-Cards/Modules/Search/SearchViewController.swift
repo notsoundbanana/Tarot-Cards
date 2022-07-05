@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UISearchResultsUpdating {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var cardDescription: UITableView!
@@ -15,7 +15,8 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var cardImage: UITableView!
     @IBOutlet var tableView : UITableView!
     
-    let networkCardManager = NetworkCardManager()
+    var networkCardManager = NetworkCardManager()
+    let searchController = UISearchController()
     
 
     override func viewDidLoad() {
@@ -23,12 +24,17 @@ class SearchViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        searchBar.placeholder = "The Magician"
-//        if searchBar.text != nil {
-//            print(searchBar.text!)
-//        }
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        networkCardManager.onCompletion = { tarotCards in
+            print(tarotCards[0].desc)
+        }
         networkCardManager.fetchAllCards()
-//        networkCardManager.fetchRandomCards(numOfCards: 1)
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        print(text)
     }
 
     
