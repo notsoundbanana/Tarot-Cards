@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct NetworkCardManager {
+//TODO: create parent's class to work with API and rewrite this to work with only Tarot API
+class NetworkCardManager {
     
     var onCompletion: (([TarotCard]) -> Void)?
     
     func fetchAllCards(){
         let urlString = "https://rws-cards-api.herokuapp.com/api/v1/cards/"
         guard let url = URL(string: urlString) else { return }
-        //Если нет ответа, вывести Alert
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url) { data, response, error in
             if let data = data {

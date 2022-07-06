@@ -7,59 +7,56 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UISearchResultsUpdating {
+class SearchViewController: UIViewController{
     
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var cardDescription: UITableView!
-    @IBOutlet weak var cardName: UITableView!
-    @IBOutlet weak var cardImage: UITableView!
-    @IBOutlet var tableView : UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var networkCardManager = NetworkCardManager()
     let searchController = UISearchController()
+    var tarotCards = [TarotCard]()
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        tableView.delegate = self
-        tableView.dataSource = self
-        searchController.searchResultsUpdater = self
-        navigationItem.searchController = searchController
-        networkCardManager.onCompletion = { tarotCards in
-            print(tarotCards[0].desc)
+    override func viewWillAppear(_ animated: Bool) {
+        networkCardManager.onCompletion = { [unowned self]  recivedTarotCards in
+            self.tarotCards = recivedTarotCards
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
         networkCardManager.fetchAllCards()
     }
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else { return }
-        print(text)
-    }
 
-    
-}
-
-
-extension SearchViewController : UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped \(indexPath.row)")
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
 }
 
-extension SearchViewController : UITableViewDataSource {
+extension SearchViewController : UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return tarotCards.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchingTableViewCell", for: indexPath) as? SearchingTableViewCell else { return UITableViewCell() }
         
-//        cell.textLabel?.text = "Hello world"
+        let card = tarotCards[indexPath.row]
+        cell.nameLabel?.text = card.name
+        cell.cardImage?.image = UIImage(named: card.tarotCardIconNameString)
+        cell.descLabel?.text = card.desc
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         150
+    }
+}
+
+extension SearchViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped \(indexPath.row)")
     }
 }

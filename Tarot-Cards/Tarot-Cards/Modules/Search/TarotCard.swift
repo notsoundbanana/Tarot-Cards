@@ -21,6 +21,11 @@ struct TarotCard {
         return suit?.rawValue
     }
     
+//TODO: var tarotCardIconNameString depends on valueInt
+    var tarotCardIconNameString: String {
+        return "TarotCyberCard"
+    }
+    
     init?(card: Card) {
         type = card.type
         name = card.name

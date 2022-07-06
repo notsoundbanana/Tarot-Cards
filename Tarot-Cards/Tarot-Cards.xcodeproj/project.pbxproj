@@ -11,6 +11,7 @@
 		376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */; };
 		376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3ED28736DBD00E5D816 /* TarotCardData.swift */; };
 		376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F128745DC700E5D816 /* TarotCard.swift */; };
+		376FE3F428749E1B00E5D816 /* SearchingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F328749E1B00E5D816 /* SearchingTableViewCell.swift */; };
 		FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3393592872FAF200BDDBDC /* AppDelegate.swift */; };
 		FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */; };
 		FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33935F2872FAF200BDDBDC /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardManager.swift; sourceTree = "<group>"; };
 		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
 		376FE3F128745DC700E5D816 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
+		376FE3F328749E1B00E5D816 /* SearchingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingTableViewCell.swift; sourceTree = "<group>"; };
 		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				376FE3E9287328CF00E5D816 /* SearchViewController.swift */,
 				376FE3ED28736DBD00E5D816 /* TarotCardData.swift */,
 				376FE3F128745DC700E5D816 /* TarotCard.swift */,
+				376FE3F328749E1B00E5D816 /* SearchingTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376FE3F428749E1B00E5D816 /* SearchingTableViewCell.swift in Sources */,
 				376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */,
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
 				376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */,
