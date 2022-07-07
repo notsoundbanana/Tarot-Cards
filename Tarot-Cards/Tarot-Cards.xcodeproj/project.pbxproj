@@ -14,6 +14,12 @@
 		29AA9B82287628E200912775 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */; };
 		29AA9B842876FCAF00912775 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B832876FCAF00912775 /* fonts */; };
 		29AA9B8628770F8B00912775 /* CurNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA9B8528770F8B00912775 /* CurNewsViewController.swift */; };
+		376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3E9287328CF00E5D816 /* SearchViewController.swift */; };
+		376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */; };
+		376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3ED28736DBD00E5D816 /* TarotCardData.swift */; };
+		376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F128745DC700E5D816 /* TarotCard.swift */; };
+		376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */; };
+		376FE3F92876DF5100E5D816 /* Vetrino.otf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE3F82876DF5100E5D816 /* Vetrino.otf */; };
 		FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3393592872FAF200BDDBDC /* AppDelegate.swift */; };
 		FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */; };
 		FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33935F2872FAF200BDDBDC /* Main.storyboard */; };
@@ -35,6 +41,13 @@
 		29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		29AA9B832876FCAF00912775 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../../../Documents/fonts; sourceTree = "<group>"; };
 		29AA9B8528770F8B00912775 /* CurNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurNewsViewController.swift; sourceTree = "<group>"; };
+		376FE3E9287328CF00E5D816 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardManager.swift; sourceTree = "<group>"; };
+		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
+		376FE3F128745DC700E5D816 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
+		376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		376FE3F82876DF5100E5D816 /* Vetrino.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Vetrino.otf; path = ../../../../../../Downloads/vetrino/Vetrino.otf; sourceTree = "<group>"; };
+		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376FE3F72876DF4300E5D816 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				376FE3F82876DF5100E5D816 /* Vetrino.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FE33934D2872FAF200BDDBDC = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				29AA9B832876FCAF00912775 /* fonts */,
+				376FE3F72876DF4300E5D816 /* Fonts */,
 				FE3393622872FAF200BDDBDC /* Assets.xcassets */,
 			);
 			path = Others;
@@ -136,6 +158,11 @@
 			isa = PBXGroup;
 			children = (
 				FE339377287302C700BDDBDC /* Search.storyboard */,
+				376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */,
+				376FE3E9287328CF00E5D816 /* SearchViewController.swift */,
+				376FE3ED28736DBD00E5D816 /* TarotCardData.swift */,
+				376FE3F128745DC700E5D816 /* TarotCard.swift */,
+				376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -218,6 +245,7 @@
 				FE3393662872FAF200BDDBDC /* LaunchScreen.storyboard in Resources */,
 				FE3393632872FAF200BDDBDC /* Assets.xcassets in Resources */,
 				FE33937B287302DB00BDDBDC /* History.storyboard in Resources */,
+				376FE3F92876DF5100E5D816 /* Vetrino.otf in Resources */,
 				FE33937E287302F200BDDBDC /* Information.storyboard in Resources */,
 				2981AAC128742DC60091C2D3 /* NewsTableViewCell.xib in Resources */,
 				FE339375287302B100BDDBDC /* News.storyboard in Resources */,
@@ -240,6 +268,12 @@
 				29AA9B81287628E200912775 /* NewsCollectionViewCell.swift in Sources */,
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
 				2981AAC028742DC60091C2D3 /* NewsTableViewCell.swift in Sources */,
+				376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */,
+				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
+				376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */,
+				376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */,
+				376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */,
+				376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */,
 				FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
