@@ -34,6 +34,11 @@ class NewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.navigationBar.barStyle = .black
+        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+
+        
         newsTable.dataSource = self
         newsTable.delegate = self
         newsCollection.dataSource = self

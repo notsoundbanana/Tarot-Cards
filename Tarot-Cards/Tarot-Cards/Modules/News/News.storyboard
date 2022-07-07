@@ -46,7 +46,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xP2-QJ-gkL">
-                                <rect key="frame" x="38" y="88" width="339" height="48"/>
+                                <rect key="frame" x="38" y="16" width="339" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
@@ -77,7 +77,7 @@
                     <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="9RE-a8-nlm">
                         <color key="badgeColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="XOB-zD-EXa"/>
+                    <navigationItem key="navigationItem" title="News" id="XOB-zD-EXa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="newsCollection" destination="Apo-Nj-sH7" id="TVn-k0-vOh"/>
