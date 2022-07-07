@@ -14,11 +14,13 @@ class SearchViewController: UIViewController{
     
     var networkCardManager = NetworkCardManager()
     var tarotCards = [TarotCard]()
+    var filtredTarotCards: [TarotCard]!
     
 
     override func viewWillAppear(_ animated: Bool) {
         networkCardManager.onCompletion = { [unowned self]  recivedTarotCards in
             self.tarotCards = recivedTarotCards
+            self.filtredTarotCards = tarotCards
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
@@ -28,25 +30,39 @@ class SearchViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
+        filtredTarotCards = tarotCards
         collectionView.dataSource = self
         collectionView.delegate = self
         searchBar.searchTextField.backgroundColor = .white
-//        let appearance = UINavigationBarAppearance()
-//        appearance.configureWithOpaqueBackground()
-//        appearance.backgroundColor = .red
-//        searchBar.standardAppearance = appearance;
-//        searchBar.scrollEdgeAppearance = navigationBar.standardAppearance
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            filtredTarotCards = tarotCards
+        } else {
+            filtredTarotCards = []
+            for card in tarotCards {
+                if card.name.lowercased().contains(searchText.lowercased()) {
+                    filtredTarotCards.append(card)
+                }
+            }
+        }
+        self.collectionView.reloadData()
     }
 }
 
 extension SearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        tarotCards.count
+        filtredTarotCards.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardSearchCollectionViewCell", for: indexPath) as! CardSearchCollectionViewCell
-        cell.setup(with: tarotCards[indexPath.row])
+        cell.setup(with: filtredTarotCards[indexPath.row])
         return cell
     }
     
@@ -60,6 +76,6 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
 
 extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(tarotCards[indexPath.row].name)
+        print(filtredTarotCards[indexPath.row].name)
     }
 }
