@@ -1,30 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zdP-Qb-AJQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--News-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="News" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsViewController" title="News" id="Y6W-OH-hqX" customClass="NewsViewController" customModule="Tarot_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="deO-kI-zYf">
+                                <rect key="frame" x="0.0" y="338" width="414" height="475"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Apo-Nj-sH7">
+                                <rect key="frame" x="0.0" y="137" width="414" height="232"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pMb-2M-NIc">
+                                    <size key="itemSize" width="329" height="158"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vBv-Xp-F2R">
+                                        <rect key="frame" x="0.0" y="37" width="329" height="158"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kbW-j4-8id">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="158"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="329" height="158"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xP2-QJ-gkL">
+                                <rect key="frame" x="38" y="88" width="339" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hot news">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="20" name="MyriadPro-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="deO-kI-zYf" secondAttribute="bottom" id="3jl-ln-n8z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="deO-kI-zYf" secondAttribute="trailing" id="GUC-6h-PjW"/>
+                            <constraint firstItem="deO-kI-zYf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HJ4-wC-EXO"/>
+                            <constraint firstItem="Apo-Nj-sH7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="49" id="SK2-C2-7CP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Apo-Nj-sH7" secondAttribute="trailing" id="YhU-ww-DA7"/>
+                            <constraint firstItem="deO-kI-zYf" firstAttribute="top" secondItem="Apo-Nj-sH7" secondAttribute="bottom" constant="-31" id="hTy-UE-KmK"/>
+                            <constraint firstItem="deO-kI-zYf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="250" id="tmW-Ey-iJd"/>
+                            <constraint firstItem="Apo-Nj-sH7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wmo-50-7D7"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="9RE-a8-nlm"/>
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="9RE-a8-nlm">
+                        <color key="badgeColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="XOB-zD-EXa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="newsCollection" destination="Apo-Nj-sH7" id="TVn-k0-vOh"/>
+                        <outlet property="newsLabel" destination="xP2-QJ-gkL" id="v5L-XI-n9r"/>
+                        <outlet property="newsTable" destination="deO-kI-zYf" id="JAT-kN-T3U"/>
+                        <segue destination="Heh-ri-HjY" kind="push" id="QW7-5n-Mw8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="116"/>
+            <point key="canvasLocation" x="66.666666666666671" y="115.84821428571428"/>
+        </scene>
+        <!--Cur News View Controller-->
+        <scene sceneID="dvk-eO-hnu">
+            <objects>
+                <viewController storyboardIdentifier="CurNewsViewController" id="Heh-ri-HjY" customClass="CurNewsViewController" customModule="Tarot_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X4j-46-vCP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s49-td-fDR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rdk-dG-aKu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4EB-cS-pK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820.28985507246387" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rSH-v7-zhI">
+            <objects>
+                <navigationController id="zdP-Qb-AJQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="owS-b6-gZR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="VId-aa-9Gx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lqq-Hp-uKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="116"/>
         </scene>
     </scenes>
     <resources>

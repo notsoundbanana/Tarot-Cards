@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2981AABB287426E20091C2D3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981AABA287426E20091C2D3 /* NewsViewController.swift */; };
+		2981AAC028742DC60091C2D3 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981AABE28742DC60091C2D3 /* NewsTableViewCell.swift */; };
+		2981AAC128742DC60091C2D3 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */; };
+		29AA9B81287628E200912775 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */; };
+		29AA9B82287628E200912775 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */; };
+		29AA9B842876FCAF00912775 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B832876FCAF00912775 /* fonts */; };
+		29AA9B8628770F8B00912775 /* CurNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA9B8528770F8B00912775 /* CurNewsViewController.swift */; };
 		FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3393592872FAF200BDDBDC /* AppDelegate.swift */; };
 		FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */; };
 		FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33935F2872FAF200BDDBDC /* Main.storyboard */; };
@@ -20,7 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2981AABA287426E20091C2D3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		2981AABE28742DC60091C2D3 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		29AA9B7A28757CEF00912775 /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		29AA9B832876FCAF00912775 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../../../Documents/fonts; sourceTree = "<group>"; };
+		29AA9B8528770F8B00912775 /* CurNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurNewsViewController.swift; sourceTree = "<group>"; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,16 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				FE3393582872FAF200BDDBDC /* Tarot-Cards */,
-				FE3393572872FAF200BDDBDC /* Products */,
+				29AA9B7A28757CEF00912775 /* Tarot-Cards.app */,
 			);
-			sourceTree = "<group>";
-		};
-		FE3393572872FAF200BDDBDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE3393562872FAF200BDDBDC /* Tarot-Cards.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FE3393582872FAF200BDDBDC /* Tarot-Cards */ = {
@@ -86,6 +92,7 @@
 		FE33936E2873004100BDDBDC /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				29AA9B832876FCAF00912775 /* fonts */,
 				FE3393622872FAF200BDDBDC /* Assets.xcassets */,
 			);
 			path = Others;
@@ -115,6 +122,12 @@
 			isa = PBXGroup;
 			children = (
 				FE339374287302B100BDDBDC /* News.storyboard */,
+				2981AABA287426E20091C2D3 /* NewsViewController.swift */,
+				2981AABE28742DC60091C2D3 /* NewsTableViewCell.swift */,
+				2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */,
+				29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */,
+				29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */,
+				29AA9B8528770F8B00912775 /* CurNewsViewController.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -160,7 +173,7 @@
 			);
 			name = "Tarot-Cards";
 			productName = "Tarot-Cards";
-			productReference = FE3393562872FAF200BDDBDC /* Tarot-Cards.app */;
+			productReference = 29AA9B7A28757CEF00912775 /* Tarot-Cards.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +200,7 @@
 				Base,
 			);
 			mainGroup = FE33934D2872FAF200BDDBDC;
-			productRefGroup = FE3393572872FAF200BDDBDC /* Products */;
+			productRefGroup = FE33934D2872FAF200BDDBDC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -201,14 +214,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AA9B842876FCAF00912775 /* fonts in Resources */,
 				FE3393662872FAF200BDDBDC /* LaunchScreen.storyboard in Resources */,
 				FE3393632872FAF200BDDBDC /* Assets.xcassets in Resources */,
 				FE33937B287302DB00BDDBDC /* History.storyboard in Resources */,
 				FE33937E287302F200BDDBDC /* Information.storyboard in Resources */,
+				2981AAC128742DC60091C2D3 /* NewsTableViewCell.xib in Resources */,
 				FE339375287302B100BDDBDC /* News.storyboard in Resources */,
 				FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */,
 				FE339378287302C700BDDBDC /* Search.storyboard in Resources */,
 				FE339372287300D000BDDBDC /* MainStoryboard.storyboard in Resources */,
+				29AA9B82287628E200912775 /* NewsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AA9B8628770F8B00912775 /* CurNewsViewController.swift in Sources */,
+				2981AABB287426E20091C2D3 /* NewsViewController.swift in Sources */,
+				29AA9B81287628E200912775 /* NewsCollectionViewCell.swift in Sources */,
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
+				2981AAC028742DC60091C2D3 /* NewsTableViewCell.swift in Sources */,
 				FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
