@@ -12,7 +12,7 @@ class NetworkCardManager {
     
     var onCompletion: (([TarotCard]) -> Void)?
     
-    func fetchAllCards(){
+    func fetchAllCards() {
         let urlString = "https://rws-cards-api.herokuapp.com/api/v1/cards/"
         guard let url = URL(string: urlString) else { return }
         let session = URLSession(configuration: .default)
@@ -26,7 +26,7 @@ class NetworkCardManager {
         task.resume()
     }
     
-    func parseJSON(withData data: Data) -> [TarotCard]?{
+    func parseJSON(withData data: Data) -> [TarotCard]? {
         let decoder = JSONDecoder()
         do {
             let tarotCardsData = try decoder.decode(TarotCardsData.self, from: data)
