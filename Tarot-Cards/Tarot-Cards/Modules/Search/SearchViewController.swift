@@ -8,12 +8,11 @@
 import UIKit
 
 class SearchViewController: UIViewController{
-    
+      
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var networkCardManager = NetworkCardManager()
-    let searchController = UISearchController()
     var tarotCards = [TarotCard]()
     
 
@@ -21,7 +20,7 @@ class SearchViewController: UIViewController{
         networkCardManager.onCompletion = { [unowned self]  recivedTarotCards in
             self.tarotCards = recivedTarotCards
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                self.collectionView.reloadData()
             }
         }
         networkCardManager.fetchAllCards()
@@ -29,34 +28,38 @@ class SearchViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        searchBar.searchTextField.backgroundColor = .white
+//        let appearance = UINavigationBarAppearance()
+//        appearance.configureWithOpaqueBackground()
+//        appearance.backgroundColor = .red
+//        searchBar.standardAppearance = appearance;
+//        searchBar.scrollEdgeAppearance = navigationBar.standardAppearance
     }
 }
 
-extension SearchViewController : UITableViewDelegate{
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tarotCards.count
+extension SearchViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        tarotCards.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchingTableViewCell", for: indexPath) as? SearchingTableViewCell else { return UITableViewCell() }
-        
-        let card = tarotCards[indexPath.row]
-        cell.nameLabel?.text = card.name
-        cell.cardImage?.image = UIImage(named: card.tarotCardIconNameString)
-        cell.descLabel?.text = card.desc
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardSearchCollectionViewCell", for: indexPath) as! CardSearchCollectionViewCell
+        cell.setup(with: tarotCards[indexPath.row])
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        150
+}
+
+extension SearchViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 300)
     }
 }
 
-extension SearchViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped \(indexPath.row)")
+extension SearchViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(tarotCards[indexPath.row].name)
     }
 }

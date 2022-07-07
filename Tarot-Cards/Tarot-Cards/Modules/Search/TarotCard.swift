@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct TarotCard {
     let type: CardType
@@ -23,7 +24,11 @@ struct TarotCard {
     
 //TODO: var tarotCardIconNameString depends on valueInt
     var tarotCardIconNameString: String {
-        return "TarotCyberCard"
+        return "ЖЕЗЛЫ10"
+    }
+    
+    var tarrotCardIcon: UIImage! {
+        return UIImage(named: tarotCardIconNameString)
     }
     
     init?(card: Card) {
