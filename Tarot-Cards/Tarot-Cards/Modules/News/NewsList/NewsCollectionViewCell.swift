@@ -11,6 +11,7 @@ class NewsCollectionViewCell: UICollectionViewCell {
 
     // MARK: - UI
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var itemView: UIView!
     

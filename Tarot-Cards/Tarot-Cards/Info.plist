@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>MyriadPro-Regular</string>
-		<string>vetrino</string>
+		<string>MyriadPro-Regular.ttf</string>
+		<string>vetrino.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
