@@ -12,8 +12,9 @@
 		2981AAC128742DC60091C2D3 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */; };
 		29AA9B81287628E200912775 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */; };
 		29AA9B82287628E200912775 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */; };
-		29AA9B842876FCAF00912775 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B832876FCAF00912775 /* fonts */; };
 		29AA9B8628770F8B00912775 /* CurNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA9B8528770F8B00912775 /* CurNewsViewController.swift */; };
+		29AA9B8B2877579400912775 /* MyriadPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B892877577900912775 /* MyriadPro-Regular.ttf */; };
+		29AA9B8C2877579400912775 /* vetrino.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B8A2877577C00912775 /* vetrino.otf */; };
 		376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3E9287328CF00E5D816 /* SearchViewController.swift */; };
 		376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */; };
 		376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3ED28736DBD00E5D816 /* TarotCardData.swift */; };
@@ -42,8 +43,9 @@
 		29AA9B7A28757CEF00912775 /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
-		29AA9B832876FCAF00912775 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../../../Documents/fonts; sourceTree = "<group>"; };
 		29AA9B8528770F8B00912775 /* CurNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurNewsViewController.swift; sourceTree = "<group>"; };
+		29AA9B892877577900912775 /* MyriadPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.ttf"; sourceTree = "<group>"; };
+		29AA9B8A2877577C00912775 /* vetrino.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vetrino.otf; sourceTree = "<group>"; };
 		376FE3E9287328CF00E5D816 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardManager.swift; sourceTree = "<group>"; };
 		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
@@ -77,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29AA9B8D2877665D00912775 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				2981AABE28742DC60091C2D3 /* NewsTableViewCell.swift */,
+				2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */,
+				29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */,
+				29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */,
+				29AA9B8528770F8B00912775 /* CurNewsViewController.swift */,
+			);
+			path = NewsList;
 		376FE3F72876DF4300E5D816 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +130,8 @@
 		FE33936E2873004100BDDBDC /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				29AA9B832876FCAF00912775 /* fonts */,
-				376FE3F72876DF4300E5D816 /* Fonts */,
+				29AA9B892877577900912775 /* MyriadPro-Regular.ttf */,
+				29AA9B8A2877577C00912775 /* vetrino.otf */,
 				FE3393622872FAF200BDDBDC /* Assets.xcassets */,
 			);
 			path = Others;
@@ -150,13 +162,9 @@
 		FE3393732873029500BDDBDC /* News */ = {
 			isa = PBXGroup;
 			children = (
+				29AA9B8D2877665D00912775 /* NewsList */,
 				FE339374287302B100BDDBDC /* News.storyboard */,
 				2981AABA287426E20091C2D3 /* NewsViewController.swift */,
-				2981AABE28742DC60091C2D3 /* NewsTableViewCell.swift */,
-				2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */,
-				29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */,
-				29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */,
-				29AA9B8528770F8B00912775 /* CurNewsViewController.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -257,7 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29AA9B842876FCAF00912775 /* fonts in Resources */,
+				29AA9B8B2877579400912775 /* MyriadPro-Regular.ttf in Resources */,
+				29AA9B8C2877579400912775 /* vetrino.otf in Resources */,
 				FE3393662872FAF200BDDBDC /* LaunchScreen.storyboard in Resources */,
 				FE3393632872FAF200BDDBDC /* Assets.xcassets in Resources */,
 				FE33937B287302DB00BDDBDC /* History.storyboard in Resources */,

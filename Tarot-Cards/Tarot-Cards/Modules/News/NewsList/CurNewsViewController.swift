@@ -9,9 +9,12 @@ import UIKit
 
 class CurNewsViewController: UIViewController {
 
+    var titileOfNewsTabed: String = "me"
+    
     // MARK: - View life cyrcle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
 }

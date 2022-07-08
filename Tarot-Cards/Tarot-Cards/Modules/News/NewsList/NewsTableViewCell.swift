@@ -13,7 +13,7 @@ class NewsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var newsView: UIView!
     @IBOutlet weak var cellLabel: UILabel!
-    @IBOutlet weak var cellTextLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
