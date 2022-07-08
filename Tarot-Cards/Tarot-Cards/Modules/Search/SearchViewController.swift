@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
+      
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -16,9 +16,7 @@ class SearchViewController: UIViewController {
     var tarotCards = [TarotCard]()
     var filtredTarotCards: [TarotCard]!
     
-    var cardLabel = String()
-    
-    
+
     override func viewWillAppear(_ animated: Bool) {
         networkCardManager.onCompletion = { [unowned self]  recivedTarotCards in
             self.tarotCards = recivedTarotCards
@@ -29,7 +27,7 @@ class SearchViewController: UIViewController {
         }
         networkCardManager.fetchAllCards()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
@@ -79,19 +77,5 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
 extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(filtredTarotCards[indexPath.row].name)
-        cardLabel = filtredTarotCards[indexPath.row].name
-        
-        let cardVC = CardViewController()
-        
-        cardVC.cardName = filtredTarotCards[indexPath.row].name  // Saving name of selected card
-        
-        performSegue(withIdentifier: "goToCardStoryboard", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let cardVC = segue.destination as! CardViewController
-        cardVC.cardName = cardLabel  // Passing card name through segue
-        
     }
 }
