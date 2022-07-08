@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct News {
+public struct News {
     
     let articalName: String
     let articalText: String
@@ -17,8 +17,8 @@ class NewsViewController: UIViewController {
     
     // MARK: - Properties
     
-    let newsArray: [News] = [
-                        News(articalName: "Demand for astrologers has increased eightfold amid the pandemic", articalText: "Семантика в программировании — дисциплина, изучающая формализации значений конструкций языков программирования посредством построения их формальных математических моделей."),
+    public let newsArray: [News] = [
+                        News(articalName: "Demand for astrologers has increased eightfold amid the pandemic", articalText: "You’ve done it. You’ve finally committed to a deck of tarot cards, and you’re ready to begin reading tarot for the first time. You sit down, whip your cards out, admire the beautiful artwork for a quick sec and perhaps get a little too excited about the prospect of becoming some all-knowing spiritual guru—and then you, wait, what comes next?Next, you might realize—damn—there are a lot of cards. Maybe it dawns on you that you only recognize one or two of them—and that little booklet isn’t nearly as helpful as you thought it’d be. Maybe you start second-guessing this whole tarot reading thing, because how the hell are you supposed to learn the meanings of all 78 cards and understand how those meanings change when cards are read upside down and get a feel for how the cards interact with one another? It’s all too much, isn’t it? Isn’t it?! Before you go abandoning that dreamy vision of you as an all-knowing spiritual guru, remind yourself that you can absolutely learn how to read tarot.People do it all the time. But you have to take things step-by-step—day-by-day. And there are definitely some things you can do to make the process easier.1. For starters, use a deck you like.One of the biggest myths about the tarot is that you can’t buy your own cards. That’s what someone told me when I first started reading, and I spent too long trying to read a deck I felt no connection to—all because of some archaic rule that suggests that if you spend your own money, you’re not going to be able to read right. That’s not true. And it’s an especially difficult rule to follow when there are tarot decks out there that fit every interest. (You can even create you own, although you might also want to save that for later.)"),
                         News(articalName: "Prayer, conspiracy, tincture of fly agarics...What do sorcerers offer during COVID-19?", articalText: "bayy"),]
     let idCell = "newsCell"
     let idItem = "newsItem"
@@ -31,7 +31,9 @@ class NewsViewController: UIViewController {
     @IBOutlet weak var newsLabel: UILabel!
    
     // MARK: - View file cyrcle
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController!.navigationBar.isHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +44,6 @@ class NewsViewController: UIViewController {
         newsTable.delegate = self
         newsCollection.dataSource = self
         newsCollection.delegate = self
-        
         newsTable.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: idCell)
         newsCollection.register(UINib(nibName: "NewsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: idItem)
         
@@ -104,9 +105,10 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let curNewsVC = storyboard?.instantiateViewController(withIdentifier: "CurNewsViewController") else { return }
-        navigationController?.pushViewController(curNewsVC, animated: true)
-        
+        guard let curNewsVC = storyboard?.instantiateViewController(withIdentifier: "CurNewsViewController") as? CurNewsViewController else { return }
+        curNewsVC.model = newsArray[indexPath.row]
+        curNewsVC.modalPresentationStyle = .fullScreen
+        present(curNewsVC, animated: true, completion: nil)
     }
 }
 
@@ -129,8 +131,11 @@ extension NewsViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 350, height: 200)
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let curNewsVC = storyboard?.instantiateViewController(withIdentifier: "CurNewsViewController") else { return }
-        navigationController?.pushViewController(curNewsVC, animated: true)
+        guard let curNewsVC = storyboard?.instantiateViewController(withIdentifier: "CurNewsViewController") as? CurNewsViewController else { return }
+        curNewsVC.modalPresentationStyle = .fullScreen
+        present(curNewsVC, animated: true, completion: nil)
+        
     }
 }
