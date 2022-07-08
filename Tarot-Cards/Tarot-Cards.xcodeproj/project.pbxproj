@@ -32,8 +32,6 @@
 		FE33937B287302DB00BDDBDC /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33937A287302DB00BDDBDC /* History.storyboard */; };
 		FE33937E287302F200BDDBDC /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33937D287302F200BDDBDC /* Information.storyboard */; };
 		FE3393802873120800BDDBDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33937F2873120800BDDBDC /* MainViewController.swift */; };
-		FEE2495728784190005295D2 /* CardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE2495628784190005295D2 /* CardView.storyboard */; };
-		FEE2495A287841A9005295D2 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE24959287841A9005295D2 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +51,7 @@
 		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		376FE3F82876DF5100E5D816 /* Vetrino.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Vetrino.otf; path = ../../../../../../Downloads/vetrino/Vetrino.otf; sourceTree = "<group>"; };
+		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,8 +64,6 @@
 		FE33937A287302DB00BDDBDC /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		FE33937D287302F200BDDBDC /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
 		FE33937F2873120800BDDBDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FEE2495628784190005295D2 /* CardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardView.storyboard; sourceTree = "<group>"; };
-		FEE24959287841A9005295D2 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +138,6 @@
 		FE33936F2873008000BDDBDC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FEE2495828784195005295D2 /* Card */,
 				FE33937C287302E000BDDBDC /* Information */,
 				FE339379287302CC00BDDBDC /* History */,
 				FE339376287302B700BDDBDC /* Search */,
@@ -197,15 +193,6 @@
 				FE33937D287302F200BDDBDC /* Information.storyboard */,
 			);
 			path = Information;
-			sourceTree = "<group>";
-		};
-		FEE2495828784195005295D2 /* Card */ = {
-			isa = PBXGroup;
-			children = (
-				FEE2495628784190005295D2 /* CardView.storyboard */,
-				FEE24959287841A9005295D2 /* CardViewController.swift */,
-			);
-			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +262,6 @@
 				FE33937E287302F200BDDBDC /* Information.storyboard in Resources */,
 				2981AAC128742DC60091C2D3 /* NewsTableViewCell.xib in Resources */,
 				FE339375287302B100BDDBDC /* News.storyboard in Resources */,
-				FEE2495728784190005295D2 /* CardView.storyboard in Resources */,
 				FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */,
 				FE339378287302C700BDDBDC /* Search.storyboard in Resources */,
 				FE339372287300D000BDDBDC /* MainStoryboard.storyboard in Resources */,
@@ -298,7 +284,6 @@
 				2981AAC028742DC60091C2D3 /* NewsTableViewCell.swift in Sources */,
 				376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */,
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
-				FEE2495A287841A9005295D2 /* CardViewController.swift in Sources */,
 				376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */,
 				376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */,
 				376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */,
@@ -379,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -448,10 +433,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KTNM35TF3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -468,7 +451,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cucumbers.Tarot-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -480,10 +462,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KTNM35TF3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -500,7 +480,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cucumbers.Tarot-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
