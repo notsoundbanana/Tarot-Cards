@@ -23,6 +23,9 @@
 		376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3ED28736DBD00E5D816 /* TarotCardData.swift */; };
 		376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F128745DC700E5D816 /* TarotCard.swift */; };
 		376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */; };
+		F79ABC662875DF8500D0E63A /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC652875DF8500D0E63A /* infoViewController.swift */; };
+		F79ABC6A2876507700D0E63A /* CreatorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */; };
+		F79ABC6C2876542B00D0E63A /* CreatorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */; };
 		FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3393592872FAF200BDDBDC /* AppDelegate.swift */; };
 		FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */; };
 		FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33935F2872FAF200BDDBDC /* Main.storyboard */; };
@@ -56,6 +59,10 @@
 		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
 		376FE3F128745DC700E5D816 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 		376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		F79ABC652875DF8500D0E63A /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
+		F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewController.swift; sourceTree = "<group>"; };
+		F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewCell.swift; sourceTree = "<group>"; };
+		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +204,9 @@
 			isa = PBXGroup;
 			children = (
 				FE33937D287302F200BDDBDC /* Information.storyboard */,
+				F79ABC652875DF8500D0E63A /* infoViewController.swift */,
+				F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */,
+				F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -306,6 +316,10 @@
 				376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */,
 				29FADB0D287AE1C000289B45 /* DataLoader.swift in Sources */,
 				376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */,
+				F79ABC662875DF8500D0E63A /* infoViewController.swift in Sources */,
+				F79ABC6C2876542B00D0E63A /* CreatorsTableViewCell.swift in Sources */,
+				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
+				F79ABC6A2876507700D0E63A /* CreatorsTableViewController.swift in Sources */,
 				FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */,
 				29FADB0B287AE0FD00289B45 /* NewsData.swift in Sources */,
 			);
