@@ -29,7 +29,7 @@
                             <fragment content="Talking to the stars: what will 2022 be like?">
                                 <attributes>
                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <font key="NSFont" size="30" name="VetrinoRegular"/>
+                                    <font key="NSFont" metaFont="system" size="30"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>

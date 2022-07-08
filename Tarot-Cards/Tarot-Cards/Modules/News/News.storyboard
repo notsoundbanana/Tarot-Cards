@@ -9,11 +9,6 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="vetrino.otf">
-            <string>VetrinoRegular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--News-->
         <scene sceneID="s0d-6b-0kx">
@@ -70,7 +65,7 @@
                                 <rect key="frame" x="33" y="68" width="168" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
