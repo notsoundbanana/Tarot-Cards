@@ -50,6 +50,7 @@
 		376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardManager.swift; sourceTree = "<group>"; };
 		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
 		376FE3F128745DC700E5D816 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
+		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		376FE3F82876DF5100E5D816 /* Vetrino.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Vetrino.otf; path = ../../../../../../Downloads/vetrino/Vetrino.otf; sourceTree = "<group>"; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
