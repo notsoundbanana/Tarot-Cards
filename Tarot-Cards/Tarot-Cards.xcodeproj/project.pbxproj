@@ -86,7 +86,6 @@
 				2981AABF28742DC60091C2D3 /* NewsTableViewCell.xib */,
 				29AA9B7F287628E200912775 /* NewsCollectionViewCell.swift */,
 				29AA9B80287628E200912775 /* NewsCollectionViewCell.xib */,
-				29AA9B8528770F8B00912775 /* CurNewsViewController.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -160,6 +159,7 @@
 				29AA9B8D2877665D00912775 /* NewsList */,
 				FE339374287302B100BDDBDC /* News.storyboard */,
 				2981AABA287426E20091C2D3 /* NewsViewController.swift */,
+				29AA9B8528770F8B00912775 /* CurNewsViewController.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
