@@ -14,6 +14,7 @@ struct TarotCardsData: Codable{
 struct Card: Codable {
     let type: CardType
     let name: String
+    let nameShort: String
     let value: String
     let valueInt: Int
     let meaningUp, meaningRev, desc: String
@@ -21,6 +22,7 @@ struct Card: Codable {
     
     enum CodingKeys: String, CodingKey {
         case type
+        case nameShort = "name_short"
         case name, value
         case valueInt = "value_int"
         case meaningUp = "meaning_up"

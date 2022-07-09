@@ -14,6 +14,7 @@ struct TarotCard {
         return type.rawValue
     }
     let name: String
+    let shortName: String
     let value: String
     let valueInt: Int
     let meaningUp, meaningRev, desc: String
@@ -34,6 +35,7 @@ struct TarotCard {
     init?(card: Card) {
         type = card.type
         name = card.name
+        shortName = card.nameShort
         value = card.value
         valueInt = card.valueInt
         meaningUp = card.meaningUp
