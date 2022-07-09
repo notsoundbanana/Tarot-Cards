@@ -20,18 +20,6 @@
                                 <rect key="frame" x="87" y="265" width="240" height="407"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgR-Cc-8oO">
-                                <rect key="frame" x="156" y="680" width="103" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.2.circlepath" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="rotateButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="InI-kZ-TDz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-iY-4YC">
                                 <rect key="frame" x="20" y="88" width="45" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,7 +43,6 @@
                     <connections>
                         <outlet property="cardUIImageView" destination="Frl-g3-ujT" id="hD2-yS-XhJ"/>
                         <outlet property="infoUIButton" destination="Sme-iY-4YC" id="yK7-CN-AXc"/>
-                        <outlet property="rotateUIButton" destination="QgR-Cc-8oO" id="yZa-uF-XNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,8 +67,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Main" width="117" height="200"/>
-        <image name="arrow.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="Main" width="189" height="353"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>

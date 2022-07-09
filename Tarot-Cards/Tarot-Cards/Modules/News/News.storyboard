@@ -9,6 +9,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="vetrino.otf">
+            <string>VetrinoRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--News-->
         <scene sceneID="s0d-6b-0kx">
@@ -134,7 +139,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="News">
                                                     <attributes>
-                                                        <font key="NSFont" size="19" name="MyriadPro-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="19"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -156,7 +161,7 @@
                                             <fragment content="Label">
                                                 <attributes>
                                                     <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="20" name="MyriadPro-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -246,7 +251,7 @@
     <resources>
         <image name="Picture 1" width="614" height="345"/>
         <image name="newspaper" catalog="system" width="128" height="111"/>
-        <image name="стрелочка" width="284" height="284"/>
+        <image name="стрелочка" width="43" height="43"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

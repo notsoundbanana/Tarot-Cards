@@ -16,8 +16,7 @@ class SearchViewController: UIViewController {
     var tarotCards = [TarotCard]()                  //after fetching all the data transformed into TarotCard array
     var filtredTarotCards: [TarotCard]!             //copy of tarotCards array for searching
     
-    var cardLabel = String()    //???
-        
+    
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: animated)      //Hiding navigation bar wile scrolling
     }
@@ -87,17 +86,13 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
 extension SearchViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(filtredTarotCards[indexPath.row].shortName)
+        let storyboard = UIStoryboard(name: "CardView", bundle: nil)
         
-        cardLabel = filtredTarotCards[indexPath.row].name
-        let cardVC = CardViewController()
-        cardVC.cardName = filtredTarotCards[indexPath.row].name  // Saving name of selected card
-        performSegue(withIdentifier: "goToCardStoryboard", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let cardVC = storyboard.instantiateViewController(withIdentifier: "CardViewController") as? CardViewController else { return }
         
-        let cardVC = segue.destination as! CardViewController
-        cardVC.cardName = cardLabel  // Passing card name through segue
+        cardVC.tarotCard.append(filtredTarotCards[indexPath.row]) // Passing selected card
+        
+        cardVC.modalPresentationStyle = .fullScreen
+        present(cardVC, animated: true, completion: nil)
     }
 }

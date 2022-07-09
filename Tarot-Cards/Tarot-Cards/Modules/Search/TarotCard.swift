@@ -43,4 +43,5 @@ struct TarotCard {
         desc = card.desc
         suit = card.suit
     }
+
 }

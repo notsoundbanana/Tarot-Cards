@@ -76,22 +76,11 @@
                     <connections>
                         <outlet property="collectionView" destination="j8u-Xf-Ws0" id="hRC-Pg-eNG"/>
                         <outlet property="searchBar" destination="Hgo-rk-sKn" id="WXd-hF-NDA"/>
-                        <segue destination="GGp-ID-Qzq" kind="show" identifier="goToCardStoryboard" id="REh-nU-wQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="115.84821428571428"/>
-        </scene>
-        <!--CardViewController-->
-        <scene sceneID="vzm-iT-WPK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CardView" referencedIdentifier="CardViewController" id="GGp-ID-Qzq" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="8ES-md-RnO"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfg-Bh-hWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="689" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1o3-jI-v7L">
