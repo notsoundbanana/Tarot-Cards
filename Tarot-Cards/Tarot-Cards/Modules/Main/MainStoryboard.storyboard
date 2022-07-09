@@ -5,8 +5,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="vetrino.otf">
+            <string>VetrinoRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main-->
         <scene sceneID="s0d-6b-0kx">
@@ -16,26 +22,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-g3-ujT">
-                                <rect key="frame" x="87" y="265" width="240" height="407"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImage" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-aP-QdF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-g3-ujT">
+                                <rect key="frame" x="84" y="218" width="247" height="461"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Frl-g3-ujT" secondAttribute="height" multiplier="247:461" id="4Is-Rf-bxJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-iY-4YC">
+                                <rect key="frame" x="20" y="44" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="UMi-Vp-bQc"/>
+                                    <constraint firstAttribute="width" constant="43" id="mGt-7d-iwH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="InfoIcon" title=""/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rider–Waite tarot deck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-4a-L8x">
+                                <rect key="frame" x="0.0" y="96" width="414" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="-2" height="-1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5v-pf-6hV">
+                                <rect key="frame" x="87" y="687" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-iY-4YC">
-                                <rect key="frame" x="20" y="88" width="45" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system" title=""/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Карты таро Уэйна" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-4a-L8x">
-                                <rect key="frame" x="29" y="144" width="357" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7m3-aP-QdF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="87c-oe-Tbj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Frl-g3-ujT" secondAttribute="bottom" constant="135" id="ELq-qP-jAh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Frl-g3-ujT" secondAttribute="trailing" constant="83" id="LRp-8w-ljz"/>
+                            <constraint firstItem="7m3-aP-QdF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QiJ-5W-r15"/>
+                            <constraint firstItem="Sme-iY-4YC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Xxe-kD-0aC"/>
+                            <constraint firstItem="Frl-g3-ujT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="84" id="gku-VA-mW2"/>
+                            <constraint firstAttribute="bottom" secondItem="7m3-aP-QdF" secondAttribute="bottom" id="jWX-sw-quB"/>
+                            <constraint firstItem="7m3-aP-QdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lc4-FO-L95"/>
+                            <constraint firstItem="Sme-iY-4YC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qVL-Cw-cIs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main" image="square.grid.2x2" catalog="system" selectedImage="square.grid.2x2.fill" id="r0x-vG-9IP"/>
                     <navigationItem key="navigationItem" id="ghf-df-n8D"/>
@@ -52,9 +83,9 @@
         <!--Navigation Controller-->
         <scene sceneID="OOM-Yw-0u6">
             <objects>
-                <navigationController id="nq5-TC-eiQ" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="nq5-TC-eiQ" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZCd-r9-8iE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -67,9 +98,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BGImage" width="1126" height="2435"/>
+        <image name="InfoIcon" width="43" height="43"/>
         <image name="Main" width="189" height="353"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

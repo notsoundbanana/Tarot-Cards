@@ -51,21 +51,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXT-bb-tmm" userLabel="Rotate Button">
-                                <rect key="frame" x="182" y="383" width="50" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="foT-vy-CcV"/>
-                                    <constraint firstAttribute="width" constant="50" id="saF-JW-eo8"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.2.circlepath" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="rotateButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3f5-GX-gaN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qk-tf-Axd">
                                 <rect key="frame" x="20" y="38" width="43" height="43"/>
                                 <constraints>
@@ -78,6 +63,17 @@
                                     <action selector="backButtonDidTab:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j6y-Jf-8Ia"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXT-bb-tmm" userLabel="Rotate Button">
+                                <rect key="frame" x="180" y="385" width="55" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="RotateButton" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rotateButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3f5-GX-gaN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.20246985549999999" green="0.21532166" blue="0.26833629609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,18 +82,17 @@
                             <constraint firstItem="onP-FG-RQh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="56k-FL-17t"/>
                             <constraint firstItem="onP-FG-RQh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7qB-IM-kLi"/>
                             <constraint firstItem="onP-FG-RQh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Ce9-cB-2gt"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AXT-bb-tmm" secondAttribute="trailing" constant="182" id="DWx-Uj-zsO"/>
                             <constraint firstItem="D4T-eR-IfD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="F8i-MV-zDk"/>
-                            <constraint firstItem="AXT-bb-tmm" firstAttribute="top" secondItem="YbR-1h-fxC" secondAttribute="bottom" constant="1" id="M3q-Ic-DHz"/>
+                            <constraint firstItem="AXT-bb-tmm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="180" id="KfO-MD-Jbh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AXT-bb-tmm" secondAttribute="trailing" constant="179" id="M9b-6Y-BiN"/>
                             <constraint firstItem="onP-FG-RQh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Mbf-W5-1TF"/>
                             <constraint firstItem="1Qk-tf-Axd" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="38" id="NuM-sI-iqo"/>
-                            <constraint firstItem="D4T-eR-IfD" firstAttribute="top" secondItem="AXT-bb-tmm" secondAttribute="bottom" constant="32" id="PvZ-B0-6Mb"/>
                             <constraint firstItem="B1A-PG-h3s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="S4u-5l-Bln"/>
-                            <constraint firstItem="AXT-bb-tmm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="182" id="Urj-lp-nck"/>
-                            <constraint firstItem="AXT-bb-tmm" firstAttribute="top" secondItem="YbR-1h-fxC" secondAttribute="bottom" constant="1" id="Wc5-8C-SWb"/>
+                            <constraint firstItem="D4T-eR-IfD" firstAttribute="top" secondItem="AXT-bb-tmm" secondAttribute="bottom" constant="11" id="U4Z-jb-CHC"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="B1A-PG-h3s" secondAttribute="trailing" constant="20" id="Wkl-nz-91L"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="D4T-eR-IfD" secondAttribute="trailing" constant="20" id="ZAd-Ue-tDx"/>
                             <constraint firstItem="onP-FG-RQh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="eA4-uo-ieh"/>
+                            <constraint firstItem="AXT-bb-tmm" firstAttribute="top" secondItem="YbR-1h-fxC" secondAttribute="bottom" constant="3" id="etv-uf-6sZ"/>
                             <constraint firstItem="B1A-PG-h3s" firstAttribute="top" secondItem="D4T-eR-IfD" secondAttribute="bottom" constant="5" id="hR5-nW-Zrl"/>
                             <constraint firstItem="B1A-PG-h3s" firstAttribute="top" secondItem="D4T-eR-IfD" secondAttribute="bottom" constant="5" id="hZX-mM-bbK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YbR-1h-fxC" secondAttribute="trailing" constant="107" id="jcR-us-o7I"/>
@@ -148,7 +143,7 @@
     <resources>
         <image name="BGCardImages" width="1153" height="1353"/>
         <image name="Main" width="189" height="353"/>
-        <image name="arrow.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="RotateButton" width="50" height="50"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="стрелочка" width="43" height="43"/>
     </resources>
