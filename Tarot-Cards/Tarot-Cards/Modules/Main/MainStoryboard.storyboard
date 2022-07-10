@@ -25,11 +25,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImage" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-aP-QdF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-g3-ujT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="The Magician" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-g3-ujT">
                                 <rect key="frame" x="84" y="218" width="247" height="461"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Frl-g3-ujT" secondAttribute="height" multiplier="247:461" id="4Is-Rf-bxJ"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tOH-FD-b0F" appends="YES" id="Skz-2U-LIl"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-iY-4YC">
                                 <rect key="frame" x="20" y="44" width="43" height="43"/>
@@ -40,8 +44,17 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="InfoIcon" title=""/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-Hm-BbW">
+                                <rect key="frame" x="176" y="714" width="63" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="RotateButton" title=""/>
+                                <connections>
+                                    <action selector="randomButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nPX-8k-QHI"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rider–Waite tarot deck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-4a-L8x">
-                                <rect key="frame" x="0.0" y="96" width="414" height="121"/>
+                                <rect key="frame" x="0.0" y="81" width="414" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,6 +86,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tOH-FD-b0F">
+                    <connections>
+                        <action selector="cardImageDidTap:" destination="Y6W-OH-hqX" id="5Fk-Ew-NXi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="115.84821428571428"/>
         </scene>
@@ -96,7 +114,8 @@
     <resources>
         <image name="BGImage" width="1126" height="2435"/>
         <image name="InfoIcon" width="43" height="43"/>
-        <image name="Main" width="189" height="353"/>
+        <image name="RotateButton" width="50" height="50"/>
+        <image name="The Magician" width="189" height="353"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">

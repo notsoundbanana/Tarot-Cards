@@ -8,20 +8,31 @@
 import UIKit
 
 class CardViewController: UIViewController {
-    var tarotCard = [TarotCard]()
+    @IBOutlet weak var cardNameLabel: UILabel!{
+        didSet {
+            cardNameLabel.text = tarotCard[0].name
+        }
+    }
     
-
-    @IBOutlet weak var cardNameLabel: UILabel!
-    @IBOutlet weak var cardDiscriptionLabel: UILabel!
-    @IBOutlet weak var cardUIImageView: UIImageView!
+    @IBOutlet weak var cardDiscriptionLabel: UILabel!{
+        didSet {
+            cardDiscriptionLabel.text = tarotCard[0].meaningUp
+            cardDiscriptionLabel.sizeToFit()
+        }
+    }
+    
+    @IBOutlet weak var cardUIImageView: UIImageView!{
+        didSet {
+            cardUIImageView.image = UIImage(named: tarotCard[0].name)
+        }
+    }
+    
+    var tarotCard = [TarotCard]()
     var imageRotated = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardUIImageView.image = UIImage(named: tarotCard[0].name)
-        cardNameLabel.text = tarotCard[0].name
-        cardDiscriptionLabel.text = tarotCard[0].meaningUp
-        cardDiscriptionLabel.sizeToFit()
     }
     
     @IBAction func backButtonDidTab(_ sender: Any) {
