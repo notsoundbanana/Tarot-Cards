@@ -13,29 +13,37 @@ class CurNewsViewController: UIViewController {
     
     // MARK: - UI
     
-    @IBOutlet weak var arrowImage: UIImageView!
-    @IBOutlet weak var newsTitleLabel: UILabel!
-    @IBOutlet weak var newsImage: UIImageView!
-    @IBOutlet weak var backgroundScrollView: UIScrollView!
-    @IBOutlet weak var articalTextLabel: UILabel!
+    @IBOutlet weak var newsTitleLabel: UILabel!{
+        didSet{
+            newsTitleLabel.text = model?.title
+        }
+    }
+    @IBOutlet weak var newsImage: UIImageView!{
+        didSet{
+            newsImage.layer.cornerRadius = 30
+            guard let imgName = model?.imgName else {return}
+            newsImage.image = UIImage(named: imgName)
+        }
+    }
+    @IBOutlet weak var backgroundScrollView: UIScrollView!{
+        didSet{
+            backgroundScrollView.layer.cornerRadius = 30
+        }
+    }
+    @IBOutlet weak var articalTextLabel: UILabel!{
+        didSet{
+            articalTextLabel.text = model?.text
+            articalTextLabel.numberOfLines = 500
+        }
+    }
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var backgroundButtonView: UIView!
     @IBAction func backButtonDidTab(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     // MARK: - View life cycle
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        newsImage.layer.cornerRadius = 30
-        backgroundScrollView.layer.cornerRadius = 30
-        backgroundButtonView.layer.cornerRadius = 15
-        newsTitleLabel.text = model?.title
-        articalTextLabel.text = model?.text
-        articalTextLabel.numberOfLines = 500
-        guard let imgName = model?.imgName else {return}
-        newsImage.image = UIImage(named: imgName)
     }
 }
