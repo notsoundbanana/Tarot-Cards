@@ -18,10 +18,10 @@ class CardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Abcd", style: .done, target: self, action: yourSelectorHere)
-        
+        cardUIImageView.image = UIImage(named: tarotCard[0].name)
         cardNameLabel.text = tarotCard[0].name
-        cardDiscriptionLabel.text = tarotCard[0].desc
+        cardDiscriptionLabel.text = tarotCard[0].meaningUp
+        cardDiscriptionLabel.sizeToFit()
     }
     
     @IBAction func backButtonDidTab(_ sender: Any) {
@@ -33,12 +33,14 @@ class CardViewController: UIViewController {
             UIView.animate(withDuration: 0.5, animations: {
                 self.cardUIImageView.transform = CGAffineTransform(rotationAngle: .pi)
             })
+            cardDiscriptionLabel.text = tarotCard[0].meaningRev
             imageRotated = true
         }
         else {
             UIView.animate(withDuration: 0.5, animations: {
                 self.cardUIImageView.transform = CGAffineTransform(rotationAngle: 0)
             })
+            cardDiscriptionLabel.text = tarotCard[0].meaningUp
             imageRotated = false
         }
     }

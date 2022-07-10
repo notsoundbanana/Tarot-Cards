@@ -41,7 +41,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TarotCyberCard" translatesAutoresizingMaskIntoConstraints="NO" id="a6m-9p-gIu">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Death" translatesAutoresizingMaskIntoConstraints="NO" id="a6m-9p-gIu">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="254"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -103,7 +103,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TarotCyberCard" width="1024" height="2048"/>
+        <image name="Death" width="189" height="353"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="BGcolor">
             <color red="0.22352941176470589" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
