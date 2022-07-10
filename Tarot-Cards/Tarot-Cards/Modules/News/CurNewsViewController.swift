@@ -11,7 +11,6 @@ class CurNewsViewController: UIViewController {
     
     var model: NewsData?
     
-
     // MARK: - UI
     
     @IBOutlet weak var arrowImage: UIImageView!
@@ -26,6 +25,7 @@ class CurNewsViewController: UIViewController {
     }
     
     // MARK: - View life cycle
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

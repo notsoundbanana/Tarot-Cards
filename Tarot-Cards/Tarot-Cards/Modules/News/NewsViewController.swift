@@ -12,6 +12,7 @@ class NewsViewController: UIViewController {
     // MARK: - Properties
     
     let newsArray = DataLoader().newsData
+
     let idCell = "newsCell"
     let idItem = "newsItem"
     
