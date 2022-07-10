@@ -16,6 +16,9 @@ class CurNewsViewController: UIViewController {
     @IBOutlet weak var backButtonLabel: UILabel!{
         didSet{
             backButtonLabel.isUserInteractionEnabled = true
+            
+            backButtonLabel.layer.masksToBounds = true
+            backButtonLabel.layer.cornerRadius = 15
         }
     }
     @IBOutlet weak var newsTitleLabel: UILabel!{
