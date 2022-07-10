@@ -49,9 +49,23 @@ class CreatorsTableViewController: UITableViewController {
     }
     
     
-    
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let infoVC = storyboard?.instantiateViewController(withIdentifier: "infoCreatorsViewController") as?  infoCreatorsViewController else {return}
+        
+        infoVC.name = creators[indexPath.row].name
+        
+        present(infoVC, animated: true)
+    }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
