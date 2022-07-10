@@ -5,8 +5,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="vetrino.otf">
+            <string>VetrinoRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main-->
         <scene sceneID="s0d-6b-0kx">
@@ -16,38 +22,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-g3-ujT">
-                                <rect key="frame" x="87" y="265" width="240" height="407"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImage" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-aP-QdF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgR-Cc-8oO">
-                                <rect key="frame" x="156" y="680" width="103" height="102"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="The Magician" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-g3-ujT">
+                                <rect key="frame" x="84" y="218" width="247" height="461"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Frl-g3-ujT" secondAttribute="height" multiplier="247:461" id="4Is-Rf-bxJ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tOH-FD-b0F" appends="YES" id="Skz-2U-LIl"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-iY-4YC">
+                                <rect key="frame" x="20" y="44" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="UMi-Vp-bQc"/>
+                                    <constraint firstAttribute="width" constant="43" id="mGt-7d-iwH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="InfoIcon" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-Hm-BbW">
+                                <rect key="frame" x="176" y="714" width="63" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.2.circlepath" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" image="RotateButton" title=""/>
                                 <connections>
-                                    <action selector="rotateButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="InI-kZ-TDz"/>
+                                    <action selector="randomButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nPX-8k-QHI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-iY-4YC">
-                                <rect key="frame" x="20" y="88" width="45" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rider–Waite tarot deck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-4a-L8x">
+                                <rect key="frame" x="0.0" y="81" width="414" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system" title=""/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Карты таро Уэйна" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-4a-L8x">
-                                <rect key="frame" x="29" y="144" width="357" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="-2" height="-1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7m3-aP-QdF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="87c-oe-Tbj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Frl-g3-ujT" secondAttribute="bottom" constant="135" id="ELq-qP-jAh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Frl-g3-ujT" secondAttribute="trailing" constant="83" id="LRp-8w-ljz"/>
+                            <constraint firstItem="7m3-aP-QdF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QiJ-5W-r15"/>
+                            <constraint firstItem="Sme-iY-4YC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Xxe-kD-0aC"/>
+                            <constraint firstItem="Frl-g3-ujT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="84" id="gku-VA-mW2"/>
+                            <constraint firstAttribute="bottom" secondItem="7m3-aP-QdF" secondAttribute="bottom" id="jWX-sw-quB"/>
+                            <constraint firstItem="7m3-aP-QdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lc4-FO-L95"/>
+                            <constraint firstItem="Sme-iY-4YC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qVL-Cw-cIs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main" image="square.grid.2x2" catalog="system" selectedImage="square.grid.2x2.fill" id="r0x-vG-9IP"/>
                     <navigationItem key="navigationItem" id="ghf-df-n8D"/>
@@ -55,19 +83,23 @@
                     <connections>
                         <outlet property="cardUIImageView" destination="Frl-g3-ujT" id="hD2-yS-XhJ"/>
                         <outlet property="infoUIButton" destination="Sme-iY-4YC" id="yK7-CN-AXc"/>
-                        <outlet property="rotateUIButton" destination="QgR-Cc-8oO" id="yZa-uF-XNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tOH-FD-b0F">
+                    <connections>
+                        <action selector="cardImageDidTap:" destination="Y6W-OH-hqX" id="5Fk-Ew-NXi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="115.84821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OOM-Yw-0u6">
             <objects>
-                <navigationController id="nq5-TC-eiQ" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="nq5-TC-eiQ" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZCd-r9-8iE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -80,10 +112,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Main" width="117" height="200"/>
-        <image name="arrow.2.circlepath" catalog="system" width="128" height="101"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="BGImage" width="1126" height="2435"/>
+        <image name="InfoIcon" width="43" height="43"/>
+        <image name="RotateButton" width="50" height="50"/>
+        <image name="The Magician" width="189" height="353"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
