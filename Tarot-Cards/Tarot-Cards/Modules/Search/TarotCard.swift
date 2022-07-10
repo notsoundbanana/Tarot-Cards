@@ -25,7 +25,7 @@ struct TarotCard {
     
 //TODO: var tarotCardIconNameString depends on valueInt
     var tarotCardIconNameString: String {
-        return "ЖЕЗЛЫ10"
+        return name
     }
     
     var tarrotCardIcon: UIImage! {
