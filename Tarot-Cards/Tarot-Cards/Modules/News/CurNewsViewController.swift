@@ -9,7 +9,7 @@ import UIKit
 
 class CurNewsViewController: UIViewController {
     
-    var model: News?
+    var model: NewsData?
     
 
     // MARK: - UI
@@ -25,15 +25,17 @@ class CurNewsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    // MARK: - View life cyrcle
+    // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         newsImage.layer.cornerRadius = 30
         backgroundScrollView.layer.cornerRadius = 30
         backgroundButtonView.layer.cornerRadius = 15
-        newsTitleLabel.text = model?.articalName
-        articalTextLabel.text = model?.articalText
+        newsTitleLabel.text = model?.title
+        articalTextLabel.text = model?.text
         articalTextLabel.numberOfLines = 500
+        guard let imgName = model?.imgName else {return}
+        newsImage.image = UIImage(named: imgName)
     }
 }

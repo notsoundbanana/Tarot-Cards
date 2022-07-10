@@ -15,6 +15,14 @@
 		29AA9B8628770F8B00912775 /* CurNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA9B8528770F8B00912775 /* CurNewsViewController.swift */; };
 		29AA9B8B2877579400912775 /* MyriadPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B892877577900912775 /* MyriadPro-Regular.ttf */; };
 		29AA9B8C2877579400912775 /* vetrino.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29AA9B8A2877577C00912775 /* vetrino.otf */; };
+		29FADB0B287AE0FD00289B45 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FADB0A287AE0FD00289B45 /* NewsData.swift */; };
+		29FADB0D287AE1C000289B45 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FADB0C287AE1C000289B45 /* DataLoader.swift */; };
+		29FADB0F287AE8F100289B45 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 29FADB0E287AE8F100289B45 /* news.json */; };
+		376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3E9287328CF00E5D816 /* SearchViewController.swift */; };
+		376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */; };
+		376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3ED28736DBD00E5D816 /* TarotCardData.swift */; };
+		376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F128745DC700E5D816 /* TarotCard.swift */; };
+		376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */; };
 		FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3393592872FAF200BDDBDC /* AppDelegate.swift */; };
 		FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */; };
 		FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33935F2872FAF200BDDBDC /* Main.storyboard */; };
@@ -25,6 +33,9 @@
 		FE339378287302C700BDDBDC /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE339377287302C700BDDBDC /* Search.storyboard */; };
 		FE33937B287302DB00BDDBDC /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33937A287302DB00BDDBDC /* History.storyboard */; };
 		FE33937E287302F200BDDBDC /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33937D287302F200BDDBDC /* Information.storyboard */; };
+		FE3393802873120800BDDBDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33937F2873120800BDDBDC /* MainViewController.swift */; };
+		FEE2495728784190005295D2 /* CardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE2495628784190005295D2 /* CardView.storyboard */; };
+		FEE2495A287841A9005295D2 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE24959287841A9005295D2 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +48,14 @@
 		29AA9B8528770F8B00912775 /* CurNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurNewsViewController.swift; sourceTree = "<group>"; };
 		29AA9B892877577900912775 /* MyriadPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.ttf"; sourceTree = "<group>"; };
 		29AA9B8A2877577C00912775 /* vetrino.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vetrino.otf; sourceTree = "<group>"; };
+		29FADB0A287AE0FD00289B45 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		29FADB0C287AE1C000289B45 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		29FADB0E287AE8F100289B45 /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		376FE3E9287328CF00E5D816 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardManager.swift; sourceTree = "<group>"; };
+		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
+		376FE3F128745DC700E5D816 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
+		376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +67,10 @@
 		FE339377287302C700BDDBDC /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		FE33937A287302DB00BDDBDC /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		FE33937D287302F200BDDBDC /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
+		FE33937F2873120800BDDBDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FE39AAD72878941700D7EEF4 /* Vetrino.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Vetrino.otf; path = ../../../../../../../Downloads/vetrino/Vetrino.otf; sourceTree = "<group>"; };
+		FEE2495628784190005295D2 /* CardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardView.storyboard; sourceTree = "<group>"; };
+		FEE24959287841A9005295D2 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +128,7 @@
 		FE33936E2873004100BDDBDC /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				FE39AAD72878941700D7EEF4 /* Vetrino.otf */,
 				29AA9B892877577900912775 /* MyriadPro-Regular.ttf */,
 				29AA9B8A2877577C00912775 /* vetrino.otf */,
 				FE3393622872FAF200BDDBDC /* Assets.xcassets */,
@@ -115,6 +139,7 @@
 		FE33936F2873008000BDDBDC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FEE2495828784195005295D2 /* Card */,
 				FE33937C287302E000BDDBDC /* Information */,
 				FE339379287302CC00BDDBDC /* History */,
 				FE339376287302B700BDDBDC /* Search */,
@@ -128,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				FE339371287300D000BDDBDC /* MainStoryboard.storyboard */,
+				FE33937F2873120800BDDBDC /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -139,6 +165,9 @@
 				FE339374287302B100BDDBDC /* News.storyboard */,
 				2981AABA287426E20091C2D3 /* NewsViewController.swift */,
 				29AA9B8528770F8B00912775 /* CurNewsViewController.swift */,
+				29FADB0A287AE0FD00289B45 /* NewsData.swift */,
+				29FADB0C287AE1C000289B45 /* DataLoader.swift */,
+				29FADB0E287AE8F100289B45 /* news.json */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -147,6 +176,11 @@
 			isa = PBXGroup;
 			children = (
 				FE339377287302C700BDDBDC /* Search.storyboard */,
+				376FE3EB28735AE900E5D816 /* NetworkCardManager.swift */,
+				376FE3E9287328CF00E5D816 /* SearchViewController.swift */,
+				376FE3ED28736DBD00E5D816 /* TarotCardData.swift */,
+				376FE3F128745DC700E5D816 /* TarotCard.swift */,
+				376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -165,6 +199,15 @@
 				FE33937D287302F200BDDBDC /* Information.storyboard */,
 			);
 			path = Information;
+			sourceTree = "<group>";
+		};
+		FEE2495828784195005295D2 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FEE2495628784190005295D2 /* CardView.storyboard */,
+				FEE24959287841A9005295D2 /* CardViewController.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +274,10 @@
 				FE3393632872FAF200BDDBDC /* Assets.xcassets in Resources */,
 				FE33937B287302DB00BDDBDC /* History.storyboard in Resources */,
 				FE33937E287302F200BDDBDC /* Information.storyboard in Resources */,
+				29FADB0F287AE8F100289B45 /* news.json in Resources */,
 				2981AAC128742DC60091C2D3 /* NewsTableViewCell.xib in Resources */,
 				FE339375287302B100BDDBDC /* News.storyboard in Resources */,
+				FEE2495728784190005295D2 /* CardView.storyboard in Resources */,
 				FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */,
 				FE339378287302C700BDDBDC /* Search.storyboard in Resources */,
 				FE339372287300D000BDDBDC /* MainStoryboard.storyboard in Resources */,
@@ -247,12 +292,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3393802873120800BDDBDC /* MainViewController.swift in Sources */,
 				29AA9B8628770F8B00912775 /* CurNewsViewController.swift in Sources */,
 				2981AABB287426E20091C2D3 /* NewsViewController.swift in Sources */,
 				29AA9B81287628E200912775 /* NewsCollectionViewCell.swift in Sources */,
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
 				2981AAC028742DC60091C2D3 /* NewsTableViewCell.swift in Sources */,
+				376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */,
+				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
+				FEE2495A287841A9005295D2 /* CardViewController.swift in Sources */,
+				376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */,
+				376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */,
+				376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */,
+				29FADB0D287AE1C000289B45 /* DataLoader.swift in Sources */,
+				376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */,
 				FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */,
+				29FADB0B287AE0FD00289B45 /* NewsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -397,8 +452,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTNM35TF3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -415,6 +472,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cucumbers.Tarot-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -426,8 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTNM35TF3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +504,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cucumbers.Tarot-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
