@@ -37,6 +37,8 @@ class SearchViewController: UIViewController {
         collectionView.delegate = self
         searchBar.searchTextField.backgroundColor = .white
         filtredTarotCards = tarotCards
+        
+        dataManager.prepareForWork()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -83,6 +85,8 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+private let dataManager = DataStoreManager()
+
 extension SearchViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -91,6 +95,8 @@ extension SearchViewController: UICollectionViewDelegate {
         guard let cardVC = storyboard.instantiateViewController(withIdentifier: "CardViewController") as? CardViewController else { return }
         
         cardVC.tarotCard.append(filtredTarotCards[indexPath.row]) // Passing selected card
+        dataManager.saveCard(filtredTarotCards[indexPath.row])
+        
         
         cardVC.modalPresentationStyle = .fullScreen
         present(cardVC, animated: true, completion: nil)

@@ -8,6 +8,9 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    private let dataManager = DataStoreManager()
+    
     @IBOutlet private var cardUIImageView: UIImageView!{
         didSet {
             cardUIImageView.isUserInteractionEnabled = true
@@ -33,6 +36,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataManager.prepareForWork()
     }
     
     @IBAction func cardImageDidTap(_ sender: Any) {
