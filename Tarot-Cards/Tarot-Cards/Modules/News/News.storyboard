@@ -119,7 +119,7 @@
                                     <constraint firstAttribute="width" constant="374" id="Hg2-GQ-9t7"/>
                                     <constraint firstAttribute="height" constant="93" id="hl3-eK-Gpz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="25"/>
                                 <color key="textColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="shadowColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -155,14 +155,18 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="jjp-dx-TzE"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="aku-ww-SFi"/>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture 1" translatesAutoresizingMaskIntoConstraints="NO" id="qSB-0f-FX7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="qSB-0f-FX7">
                                 <rect key="frame" x="20" y="205" width="374" height="178"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="178" id="4p9-NP-TQp"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3p-KT-o5s">
-                                <rect key="frame" x="-6" y="47" width="55" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3p-KT-o5s">
+                                <rect key="frame" x="20" y="44" width="19" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="exa-29-99y"/>
+                                    <constraint firstAttribute="width" constant="19" id="yB7-0e-4nH"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="стрелочка" title=""/>
@@ -170,18 +174,37 @@
                                     <action selector="backButtonDidTab:" destination="Heh-ri-HjY" eventType="touchUpInside" id="nvw-Ie-8Nl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx6-tu-ckV">
+                                <rect key="frame" x="47" y="44" width="59" height="28"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.20392158630000001" green="0.21568629149999999" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="0.0"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ief-8f-xpj" appends="YES" id="cBT-xV-JXs"/>
+                                </connections>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="urb-Uo-u0o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2Fs-Vc-5zv" firstAttribute="top" secondItem="c3p-KT-o5s" secondAttribute="bottom" constant="35" id="0m4-su-ce7"/>
                             <constraint firstItem="2Fs-Vc-5zv" firstAttribute="leading" secondItem="urb-Uo-u0o" secondAttribute="leading" constant="20" id="5GU-rM-Hgn"/>
                             <constraint firstItem="qSB-0f-FX7" firstAttribute="top" secondItem="2Fs-Vc-5zv" secondAttribute="bottom" constant="5" id="5Sy-QF-AdU"/>
-                            <constraint firstItem="2Fs-Vc-5zv" firstAttribute="top" secondItem="c3p-KT-o5s" secondAttribute="bottom" constant="3" id="6v9-HV-CCa"/>
-                            <constraint firstItem="urb-Uo-u0o" firstAttribute="trailing" secondItem="2Fs-Vc-5zv" secondAttribute="trailing" constant="20" id="CdP-u4-dzy"/>
                             <constraint firstItem="urb-Uo-u0o" firstAttribute="trailing" secondItem="qSB-0f-FX7" secondAttribute="trailing" constant="20" id="EHR-Ag-0dh"/>
                             <constraint firstItem="Ip1-hT-X19" firstAttribute="top" secondItem="qSB-0f-FX7" secondAttribute="bottom" constant="15" id="XJ7-qe-lLm"/>
                             <constraint firstItem="qSB-0f-FX7" firstAttribute="top" secondItem="2Fs-Vc-5zv" secondAttribute="bottom" constant="5" id="ZGz-0E-LpQ"/>
+                            <constraint firstItem="c3p-KT-o5s" firstAttribute="leading" secondItem="urb-Uo-u0o" secondAttribute="leading" constant="20" id="bhJ-yf-WfO"/>
+                            <constraint firstItem="cx6-tu-ckV" firstAttribute="top" secondItem="urb-Uo-u0o" secondAttribute="top" id="bzv-5W-Rql"/>
                             <constraint firstItem="Ip1-hT-X19" firstAttribute="trailing" secondItem="qSB-0f-FX7" secondAttribute="trailing" id="e7N-tJ-Ta9"/>
+                            <constraint firstItem="2Fs-Vc-5zv" firstAttribute="top" secondItem="cx6-tu-ckV" secondAttribute="bottom" constant="35" id="ifl-zG-cja"/>
+                            <constraint firstItem="cx6-tu-ckV" firstAttribute="leading" secondItem="c3p-KT-o5s" secondAttribute="trailing" constant="8" id="kGo-m8-EXc"/>
+                            <constraint firstItem="c3p-KT-o5s" firstAttribute="top" secondItem="urb-Uo-u0o" secondAttribute="top" id="p0R-HU-O8O"/>
                             <constraint firstAttribute="bottom" secondItem="Ip1-hT-X19" secondAttribute="bottom" id="pUJ-E7-UMI"/>
                             <constraint firstItem="qSB-0f-FX7" firstAttribute="top" secondItem="2Fs-Vc-5zv" secondAttribute="bottom" constant="5" id="pk5-vm-hyY"/>
                             <constraint firstItem="qSB-0f-FX7" firstAttribute="leading" secondItem="urb-Uo-u0o" secondAttribute="leading" constant="20" id="sbJ-qM-bYY"/>
@@ -195,12 +218,18 @@
                     <connections>
                         <outlet property="articalTextLabel" destination="KcJ-oe-prt" id="XPD-QB-CNZ"/>
                         <outlet property="backButton" destination="c3p-KT-o5s" id="jPX-zD-Bi2"/>
+                        <outlet property="backButtonLabel" destination="cx6-tu-ckV" id="YE3-MI-FFh"/>
                         <outlet property="backgroundScrollView" destination="Ip1-hT-X19" id="CV5-AD-RVo"/>
                         <outlet property="newsImage" destination="qSB-0f-FX7" id="szC-HW-8qA"/>
                         <outlet property="newsTitleLabel" destination="2Fs-Vc-5zv" id="Q20-Da-6Nj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4EB-cS-pK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ief-8f-xpj">
+                    <connections>
+                        <action selector="backButtonDidTab:" destination="Heh-ri-HjY" id="byw-ie-zJ2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="844.92753623188412" y="115.84821428571428"/>
         </scene>
@@ -222,7 +251,7 @@
     </scenes>
     <color key="tintColor" red="0.20392156859999999" green="0.2156862745" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
-        <image name="Picture 1" width="614" height="345"/>
+        <image name="0" width="677" height="381"/>
         <image name="newspaper" catalog="system" width="128" height="111"/>
         <image name="стрелочка" width="43" height="43"/>
         <systemColor name="systemBackgroundColor">

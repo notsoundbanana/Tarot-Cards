@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="width" secondItem="onP-FG-RQh" secondAttribute="height" multiplier="69:73" id="rLS-mp-VcF"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="YbR-1h-fxC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The High Priestess" translatesAutoresizingMaskIntoConstraints="NO" id="YbR-1h-fxC">
                                 <rect key="frame" x="107" y="57" width="200" height="325"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Ncs-kg-h4K"/>
@@ -39,8 +39,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The High Priestess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-eR-IfD">
-                                <rect key="frame" x="20" y="446" width="374" height="38"/>
-                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="35"/>
+                                <rect key="frame" x="20" y="446" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -68,9 +68,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn5-YR-cJ2">
-                                <rect key="frame" x="20" y="492" width="374" height="64"/>
+                                <rect key="frame" x="20" y="494" width="374" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -137,8 +137,8 @@
     </scenes>
     <resources>
         <image name="BGCardImages" width="1153" height="1353"/>
-        <image name="Main" width="189" height="353"/>
         <image name="RotateButton" width="50" height="50"/>
+        <image name="The High Priestess" width="189" height="353"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="стрелочка" width="43" height="43"/>
     </resources>

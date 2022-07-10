@@ -13,6 +13,11 @@ class CurNewsViewController: UIViewController {
     
     // MARK: - UI
     
+    @IBOutlet weak var backButtonLabel: UILabel!{
+        didSet{
+            backButtonLabel.isUserInteractionEnabled = true
+        }
+    }
     @IBOutlet weak var newsTitleLabel: UILabel!{
         didSet{
             newsTitleLabel.text = model?.title
@@ -36,7 +41,9 @@ class CurNewsViewController: UIViewController {
             articalTextLabel.numberOfLines = 500
         }
     }
+    
     @IBOutlet weak var backButton: UIButton!
+    
     @IBAction func backButtonDidTab(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

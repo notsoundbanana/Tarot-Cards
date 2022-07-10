@@ -51,7 +51,9 @@ class MainViewController: UIViewController {
     }
     
     func generateRandomCard(){
-        randomInt = Int.random(in: 0...77)
+        randomInt = Int.random(in: 1...77)
+        UIView.transition(with: cardUIImageView, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
+        
         cardUIImageView.image = UIImage(named: tarotCards[randomInt - 1].name)
     }
     
