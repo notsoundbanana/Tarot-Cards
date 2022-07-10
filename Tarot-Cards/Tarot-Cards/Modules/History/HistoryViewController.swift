@@ -7,16 +7,22 @@
 
 import UIKit
 
+
 var arrayOfRecentCards: [TarotCard] = []
 
 class HistoryViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     private let dataStore = DataStoreManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.isHidden = true
+        self.view.backgroundColor = UIColor(red: 0.2039, green: 0.2157, blue: 0.2667, alpha: 1)
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         dataStore.prepareForWork()
@@ -36,7 +42,16 @@ extension HistoryViewController: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HistoryViewCell", for: indexPath) as! HistoryViewCell
         
-        cell.setupRecentCard(with: arrayOfRecentCards[indexPath.row])
+        if arrayOfRecentCards.count > 10 {
+            arrayOfRecentCards.removeFirst()
+            collectionView.reloadData()
+        } else {
+            cell.setupRecentCard(with: arrayOfRecentCards.reversed()[indexPath.row])
+        }
+        
+        cell.backgroundColor = UIColor(red: 0.2039, green: 0.2157, blue: 0.2667, alpha: 1)
+        collectionView.backgroundColor = UIColor(red: 0.2039, green: 0.2157, blue: 0.2667, alpha: 1)
+        
         return cell
     }
 }

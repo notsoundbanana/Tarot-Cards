@@ -19,4 +19,19 @@ class HistoryViewCell: UICollectionViewCell {
         subtitleCardLabel?.text = card.meaningUp
         subtitleCardLabel.sizeToFit()
     }
+    
+    override func awakeFromNib() {
+            super.awakeFromNib()
+        
+        titleCardLabel.font = UIFont(name: "MyriadPro-Regular", size: 15)
+        titleCardLabel.layer.cornerRadius = 10
+        subtitleCardLabel.layer.cornerRadius = 10
+        titleCardLabel.textColor = .black
+        subtitleCardLabel.textColor = .black
+        titleCardLabel.layer.masksToBounds = true
+        subtitleCardLabel.layer.masksToBounds = true
+        titleCardLabel.backgroundColor = .white
+        subtitleCardLabel.backgroundColor = .white
+        
+    }
 }
