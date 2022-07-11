@@ -64,7 +64,6 @@
 		F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewController.swift; sourceTree = "<group>"; };
 		F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewCell.swift; sourceTree = "<group>"; };
 		F7A1FF89287B4D8700A492DA /* infoCreatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCreatorsViewController.swift; sourceTree = "<group>"; };
-		FE3393562872FAF200BDDBDC /* Tarot-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarot-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -472,7 +471,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KTNM35TF3W;
 				DEVELOPMENT_TEAM = KZRQP6VMRA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
@@ -504,7 +502,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KTNM35TF3W;
 				DEVELOPMENT_TEAM = KZRQP6VMRA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";

@@ -8,34 +8,33 @@
 import UIKit
 
 class infoCreatorsViewController: UIViewController {
-
+    
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var TextAboutCreators: UITextView!
-    var name: String?
+    var name = String()
+    var tgNick = String()
+    @IBOutlet weak var AvatarImage: UIImageView!{
+        didSet{
+            AvatarImage.image = UIImage(named: name)
+            AvatarImage.layer.masksToBounds = true
+            AvatarImage.layer.cornerRadius = AvatarImage.bounds.width / 2
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = name
     }
     
-
+    
     @IBAction func infoButton(_ sender: Any) {
         dismiss(animated: true)
     }
     
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func telegramButtonDidTap(_ sender: Any) {
+        if let url = URL(string: "https://t.me/\(tgNick)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
-    */
-
 }
