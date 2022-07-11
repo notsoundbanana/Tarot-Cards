@@ -37,6 +37,8 @@ class SearchViewController: UIViewController {
         collectionView.delegate = self
         searchBar.searchTextField.backgroundColor = .white
         filtredTarotCards = tarotCards
+        
+        dataManager.prepareForWork()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -82,6 +84,8 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: 200, height: 300)
     }
 }
+
+private let dataManager = DataStoreManager()
 
 extension SearchViewController: UICollectionViewDelegate {
     

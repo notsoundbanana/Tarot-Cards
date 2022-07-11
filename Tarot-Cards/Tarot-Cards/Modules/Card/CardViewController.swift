@@ -30,9 +30,11 @@ class CardViewController: UIViewController {
     var tarotCard = [TarotCard]()
     var imageRotated = false
     
+    private let dataManager = DataStoreManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataManager.saveCard(tarotCard[0])
     }
     
     @IBAction func backButtonDidTab(_ sender: Any) {
