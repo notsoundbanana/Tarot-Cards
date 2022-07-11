@@ -9,11 +9,7 @@ import UIKit
 
 class infoViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-   
+    
     @IBOutlet weak var bacgroundImage: UIImageView!
     
     @IBAction func aboutAppButton(_ sender: UIButton) {
@@ -29,7 +25,7 @@ class infoViewController: UIViewController {
     @IBAction func creatorsButtonDidTap(_ sender: Any) {
         
         guard let creatVC = storyboard?.instantiateViewController(withIdentifier: "CreatorsTableViewController") else {return}
-//        navigationController?.pushViewController(creatVC, animated: true)
+
         present(creatVC, animated: true, completion: nil)
     }
     
@@ -39,6 +35,12 @@ class infoViewController: UIViewController {
              
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+   
 }
 
 
