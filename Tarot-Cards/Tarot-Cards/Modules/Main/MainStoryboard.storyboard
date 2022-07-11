@@ -43,6 +43,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="InfoIcon" title=""/>
+                                <connections>
+                                    <action selector="infoButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="M3Q-ow-WZz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rider–Waite tarot deck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-4a-L8x">
                                 <rect key="frame" x="0.0" y="81" width="414" height="121"/>
