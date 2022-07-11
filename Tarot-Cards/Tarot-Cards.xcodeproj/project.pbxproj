@@ -23,6 +23,10 @@
 		376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3ED28736DBD00E5D816 /* TarotCardData.swift */; };
 		376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F128745DC700E5D816 /* TarotCard.swift */; };
 		376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */; };
+		F79ABC662875DF8500D0E63A /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC652875DF8500D0E63A /* infoViewController.swift */; };
+		F79ABC6A2876507700D0E63A /* CreatorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */; };
+		F79ABC6C2876542B00D0E63A /* CreatorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */; };
+		F7A1FF8A287B4D8700A492DA /* infoCreatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1FF89287B4D8700A492DA /* infoCreatorsViewController.swift */; };
 		9AB7EF9B287AE86400481BF9 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7EF9A287AE86400481BF9 /* HistoryViewCell.swift */; };
 		9AB7EF9D287AE8CD00481BF9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7EF9C287AE8CD00481BF9 /* HistoryViewController.swift */; };
 		9AB7EFA1287B084600481BF9 /* DataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7EFA0287B084600481BF9 /* DataStoreManager.swift */; };
@@ -59,6 +63,10 @@
 		376FE3ED28736DBD00E5D816 /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
 		376FE3F128745DC700E5D816 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 		376FE3F52876D61E00E5D816 /* CardSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		F79ABC652875DF8500D0E63A /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
+		F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewController.swift; sourceTree = "<group>"; };
+		F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewCell.swift; sourceTree = "<group>"; };
+		F7A1FF89287B4D8700A492DA /* infoCreatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCreatorsViewController.swift; sourceTree = "<group>"; };
 		9AB7EF9A287AE86400481BF9 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 		9AB7EF9C287AE8CD00481BF9 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		9AB7EFA0287B084600481BF9 /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
@@ -206,6 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				FE33937D287302F200BDDBDC /* Information.storyboard */,
+				F79ABC652875DF8500D0E63A /* infoViewController.swift */,
+				F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */,
+				F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */,
+				F7A1FF89287B4D8700A492DA /* infoCreatorsViewController.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -318,6 +330,11 @@
 				29FADB0D287AE1C000289B45 /* DataLoader.swift in Sources */,
 				9AB7EF9B287AE86400481BF9 /* HistoryViewCell.swift in Sources */,
 				376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */,
+				F79ABC662875DF8500D0E63A /* infoViewController.swift in Sources */,
+				F79ABC6C2876542B00D0E63A /* CreatorsTableViewCell.swift in Sources */,
+				F7A1FF8A287B4D8700A492DA /* infoCreatorsViewController.swift in Sources */,
+				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
+				F79ABC6A2876507700D0E63A /* CreatorsTableViewController.swift in Sources */,
 				FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */,
 				29FADB0B287AE0FD00289B45 /* NewsData.swift in Sources */,
 			);
@@ -466,7 +483,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KTNM35TF3W;
+				DEVELOPMENT_TEAM = KZRQP6VMRA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -497,7 +514,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KTNM35TF3W;
+				DEVELOPMENT_TEAM = KZRQP6VMRA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tarot-Cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
