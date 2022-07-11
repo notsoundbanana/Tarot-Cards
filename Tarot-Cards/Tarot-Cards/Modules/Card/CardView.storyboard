@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWz-sx-Lgh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vetrino.otf">
+            <string>VetrinoRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CardViewController" customModule="Tarot_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGCardImages" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="onP-FG-RQh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="438"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="7Vy-IG-2uJ"/>
+                                    <constraint firstAttribute="width" constant="414" id="AWc-Zj-Ck2"/>
+                                    <constraint firstAttribute="height" constant="438" id="HQU-BH-yUQ"/>
+                                    <constraint firstAttribute="width" secondItem="onP-FG-RQh" secondAttribute="height" multiplier="69:73" id="rLS-mp-VcF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The High Priestess" translatesAutoresizingMaskIntoConstraints="NO" id="YbR-1h-fxC">
+                                <rect key="frame" x="107" y="57" width="200" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ncs-kg-h4K"/>
+                                    <constraint firstAttribute="height" constant="325" id="WgY-fg-ded"/>
+                                    <constraint firstAttribute="width" secondItem="YbR-1h-fxC" secondAttribute="height" multiplier="8:13" id="Xbd-nc-rvS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The High Priestess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-eR-IfD">
+                                <rect key="frame" x="20" y="446" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="VetrinoRegular" family="Vetrino" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qk-tf-Axd">
+                                <rect key="frame" x="20" y="38" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="Rch-zQ-Uua"/>
+                                    <constraint firstAttribute="height" constant="43" id="z3f-gk-xwg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="стрелочка" title=""/>
+                                <connections>
+                                    <action selector="backButtonDidTab:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j6y-Jf-8Ia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXT-bb-tmm" userLabel="Rotate Button">
+                                <rect key="frame" x="180" y="385" width="55" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="RotateButton" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rotateButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3f5-GX-gaN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn5-YR-cJ2">
+                                <rect key="frame" x="20" y="494" width="374" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.20246985549999999" green="0.21532166" blue="0.26833629609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="onP-FG-RQh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="56k-FL-17t"/>
+                            <constraint firstItem="onP-FG-RQh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7qB-IM-kLi"/>
+                            <constraint firstItem="onP-FG-RQh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Ce9-cB-2gt"/>
+                            <constraint firstItem="D4T-eR-IfD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="F8i-MV-zDk"/>
+                            <constraint firstItem="AXT-bb-tmm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="180" id="KfO-MD-Jbh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AXT-bb-tmm" secondAttribute="trailing" constant="179" id="M9b-6Y-BiN"/>
+                            <constraint firstItem="onP-FG-RQh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Mbf-W5-1TF"/>
+                            <constraint firstItem="1Qk-tf-Axd" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="38" id="NuM-sI-iqo"/>
+                            <constraint firstItem="D4T-eR-IfD" firstAttribute="top" secondItem="AXT-bb-tmm" secondAttribute="bottom" constant="11" id="U4Z-jb-CHC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="D4T-eR-IfD" secondAttribute="trailing" constant="20" id="ZAd-Ue-tDx"/>
+                            <constraint firstItem="onP-FG-RQh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="eA4-uo-ieh"/>
+                            <constraint firstItem="AXT-bb-tmm" firstAttribute="top" secondItem="YbR-1h-fxC" secondAttribute="bottom" constant="3" id="etv-uf-6sZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YbR-1h-fxC" secondAttribute="trailing" constant="107" id="jcR-us-o7I"/>
+                            <constraint firstItem="1Qk-tf-Axd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mJT-eO-LrX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="D4T-eR-IfD" secondAttribute="trailing" constant="20" id="oXt-MI-26E"/>
+                            <constraint firstItem="YbR-1h-fxC" firstAttribute="leading" secondItem="1Qk-tf-Axd" secondAttribute="trailing" constant="44" id="syJ-U8-C7p"/>
+                            <constraint firstItem="D4T-eR-IfD" firstAttribute="top" secondItem="onP-FG-RQh" secondAttribute="bottom" constant="8" symbolic="YES" id="v4u-Re-RDH"/>
+                            <constraint firstItem="onP-FG-RQh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vP5-CL-4F1"/>
+                            <constraint firstItem="YbR-1h-fxC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="13" id="yZH-Nb-b8O"/>
+                            <constraint firstItem="D4T-eR-IfD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ykw-aA-AeT"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cu6-rD-Qdg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cardDiscriptionLabel" destination="xn5-YR-cJ2" id="JBJ-QM-6Z3"/>
+                        <outlet property="cardNameLabel" destination="D4T-eR-IfD" id="IJs-5I-wh2"/>
+                        <outlet property="cardUIImageView" destination="YbR-1h-fxC" id="8zn-jR-Jsb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r3K-YB-oLL">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" navigationBarHidden="YES" id="iWz-sx-Lgh" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward" catalog="system" id="PSa-Qi-6ap">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="8bM-ko-NVu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="xTB-De-Kse"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avx-mB-tM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-772" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGCardImages" width="1153" height="1353"/>
+        <image name="RotateButton" width="50" height="50"/>
+        <image name="The High Priestess" width="189" height="353"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="стрелочка" width="43" height="43"/>
+    </resources>
+</document>
