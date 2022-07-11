@@ -27,6 +27,9 @@
 		F79ABC6A2876507700D0E63A /* CreatorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */; };
 		F79ABC6C2876542B00D0E63A /* CreatorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */; };
 		F7A1FF8A287B4D8700A492DA /* infoCreatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1FF89287B4D8700A492DA /* infoCreatorsViewController.swift */; };
+		9AB7EF9B287AE86400481BF9 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7EF9A287AE86400481BF9 /* HistoryViewCell.swift */; };
+		9AB7EF9D287AE8CD00481BF9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7EF9C287AE8CD00481BF9 /* HistoryViewController.swift */; };
+		9AB7EFA1287B084600481BF9 /* DataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7EFA0287B084600481BF9 /* DataStoreManager.swift */; };
 		FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3393592872FAF200BDDBDC /* AppDelegate.swift */; };
 		FE33935C2872FAF200BDDBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */; };
 		FE3393612872FAF200BDDBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33935F2872FAF200BDDBDC /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		F79ABC692876507700D0E63A /* CreatorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewController.swift; sourceTree = "<group>"; };
 		F79ABC6B2876542B00D0E63A /* CreatorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsTableViewCell.swift; sourceTree = "<group>"; };
 		F7A1FF89287B4D8700A492DA /* infoCreatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCreatorsViewController.swift; sourceTree = "<group>"; };
+		9AB7EF9A287AE86400481BF9 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		9AB7EF9C287AE8CD00481BF9 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9AB7EFA0287B084600481BF9 /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
 		FE3393592872FAF200BDDBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE33935B2872FAF200BDDBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE3393602872FAF200BDDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				FE33937A287302DB00BDDBDC /* History.storyboard */,
+				9AB7EF9A287AE86400481BF9 /* HistoryViewCell.swift */,
+				9AB7EF9C287AE8CD00481BF9 /* HistoryViewController.swift */,
+				9AB7EFA0287B084600481BF9 /* DataStoreManager.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -311,12 +320,15 @@
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
 				2981AAC028742DC60091C2D3 /* NewsTableViewCell.swift in Sources */,
 				376FE3EA287328CF00E5D816 /* SearchViewController.swift in Sources */,
+				9AB7EF9D287AE8CD00481BF9 /* HistoryViewController.swift in Sources */,
 				FE33935A2872FAF200BDDBDC /* AppDelegate.swift in Sources */,
 				FEE2495A287841A9005295D2 /* CardViewController.swift in Sources */,
+				9AB7EFA1287B084600481BF9 /* DataStoreManager.swift in Sources */,
 				376FE3F228745DC700E5D816 /* TarotCard.swift in Sources */,
 				376FE3F62876D61E00E5D816 /* CardSearchCollectionViewCell.swift in Sources */,
 				376FE3EE28736DBD00E5D816 /* TarotCardData.swift in Sources */,
 				29FADB0D287AE1C000289B45 /* DataLoader.swift in Sources */,
+				9AB7EF9B287AE86400481BF9 /* HistoryViewCell.swift in Sources */,
 				376FE3EC28735AE900E5D816 /* NetworkCardManager.swift in Sources */,
 				F79ABC662875DF8500D0E63A /* infoViewController.swift in Sources */,
 				F79ABC6C2876542B00D0E63A /* CreatorsTableViewCell.swift in Sources */,
