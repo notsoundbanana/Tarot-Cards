@@ -15,7 +15,13 @@ class DataStoreManager {
     }
     
     func saveCard(_ card: TarotCard) {
-        arrayOfRecentCards.append(card)
+        if arrayOfRecentCards.count >= 10 {
+            arrayOfRecentCards.removeFirst()
+            arrayOfRecentCards.append(card)
+        } else {
+            arrayOfRecentCards.append(card)
+        }
         UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfRecentCards), forKey: "arrayOfOpenedCards")
     }
+    
 }
