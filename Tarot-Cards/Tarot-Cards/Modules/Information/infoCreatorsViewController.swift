@@ -10,7 +10,6 @@ import UIKit
 class infoCreatorsViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var TextAboutCreators: UITextView!
     var name = String()
     var tgNick = String()
@@ -26,7 +25,6 @@ class infoCreatorsViewController: UIViewController {
         super.viewDidLoad()
         nameLabel.text = name
     }
-    
     
     @IBAction func infoButton(_ sender: Any) {
         dismiss(animated: true)

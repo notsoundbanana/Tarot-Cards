@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct TarotCard {
+struct TarotCard: Codable {
     let type: CardType
     var typeString: String {
         return type.rawValue
