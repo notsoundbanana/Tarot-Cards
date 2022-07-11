@@ -61,4 +61,14 @@ class MainViewController: UIViewController {
         cardUIImageView.image = UIImage(named: tarotCards[randomInt - 1].name)
     }
     
+    @IBAction func infoButtonDidTap(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Information", bundle: nil)
+        
+        guard let infoVC = storyboard.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+        
+        
+//        infoVC.modalPresentationStyle = .fullScreen
+        present(infoVC, animated: true, completion: nil)
+    }
 }

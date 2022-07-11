@@ -29,7 +29,8 @@ class infoViewController: UIViewController {
     @IBAction func creatorsButtonDidTap(_ sender: Any) {
         
         guard let creatVC = storyboard?.instantiateViewController(withIdentifier: "CreatorsTableViewController") else {return}
-        navigationController?.pushViewController(creatVC, animated: true)
+//        navigationController?.pushViewController(creatVC, animated: true)
+        present(creatVC, animated: true, completion: nil)
     }
     
     @IBAction func GitHubButtonDidTap(_ sender: Any) {
